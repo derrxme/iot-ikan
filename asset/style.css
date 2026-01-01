@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    background-color: black;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px 10px 5px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+li {
+    background-color: grey;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li:hover {
+    border-bottom: 1px white solid;
+    background-color: rgba(250, 235, 215, 0.719);
+}
+
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background-color: seagreen;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.178);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.row-data {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px black solid;
+    padding: 10px;
+}
+
+.data-one {
+    border: 2px black solid;
+    width: 50%;
+    min-height: auto;
+    text-align: center;
+    margin: 0 1rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.content {
+    text-align: start;
+}
+
+.content > h1 {
+    margin-bottom: 1rem;
+}
+
+.content > .button {
+    margin-top: 100px;
+}
+
+.content > .button > a#register{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: steelblue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-left: 2px white solid;
+    border-bottom: 3px white solid;
+    margin-top: 10px;
+}
+
+.content > .button > a#login{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-left: 2px white solid;
+    border-bottom: 3px white solid;
+    margin-top: 10px;
+}
+
+.button > a#login:hover {
+    padding: 7px;
+    transition: all 0.1s ease-in-out;
+    color: yellowgreen;
+    background-color: rgb(0, 0, 0);
+    border-left: 2px yellowgreen solid;
+    border-bottom: 3px yellowgreen solid;
+}
+.button > a#register:hover {
+    padding: 7px;
+    transition: all 0.1s ease-in-out;
+    background-color: rgba(0, 32, 102, 0.836);
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+
