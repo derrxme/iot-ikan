@@ -4,6 +4,16 @@
     margin: 0;
 }
 
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(/website-project/terminal/image/serene-japanese-garden-view-through-sliding-door.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 nav {
     display: flex;
     background-color: black;
@@ -12,6 +22,9 @@ nav {
     align-items: center;
     color: white;
     padding: 5px 10px 5px;
+    position: sticky;
+    z-index: 2000;
+    top: 0;
 }
 
 ul {
@@ -45,9 +58,6 @@ main {
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    width: 100%;
-    min-height: 100vh;
-    background-color: seagreen;
 }
 
 section {
@@ -68,7 +78,7 @@ section {
 }
 
 .data-one {
-    border: 2px black solid;
+    border: 2px rgba(0, 0, 0, 0.062) solid;
     width: 50%;
     min-height: auto;
     text-align: center;
@@ -78,6 +88,9 @@ section {
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(5px);
 }
 
 .content {
@@ -137,4 +150,127 @@ img {
     height: auto;
 }
 
+.nama-ikan {
+    background-color: beige;
+    width: 100%;
+    min-height: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.jumlah-pembudidaya {
+    background-color: beige;
+    width: 100%;
+    min-height: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.wiki {
+    width: 100%;
+    min-height: auto;
+    /* border: 2px black solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wiki > .wiki-title {
+    font-size: 20px;
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px black solid;
+    background-color: yellowgreen;
+}
+
+.wiki > .nilai-gizi {
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 2px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-nutrisi {
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 50%;
+    min-height: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.protein, .karbohidrat, .lemak, .vitamin {
+    background-color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    width: 0;
+    min-height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.protein:hover {
+    width: 52%;
+    transition: all 1s ease-in-out;
+    background-color: #2ecc71;
+}
+
+.karbohidrat:hover {
+    width: 0%;
+    transition: all 1s ease-in-out;
+    background-color: #8e44ad;
+}
+
+.lemak:hover {
+    width: 4.5%;
+    transition: all 1s ease-in-out;
+    background-color: #3498db;
+}
+
+#b12:hover {
+    width: 79%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
+
+#b3:hover {
+    width: 29%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
+
+#d:hover {
+    width: 16%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
+
+#b6:hover {
+    width: 12%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
+
+#e:hover {
+    width: 3%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
+
+#b5:hover {
+    width: 8%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
+
+#b5:hover {
+    width: 8%;
+    transition: all 1s ease-in-out;
+    background-color: #e67e22;
+}
 
