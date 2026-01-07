@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/src/asset/global.css">
+
+    <title>Daftar</title>
+</head>
+<body>
+    <nav>
+        <h1>Fish <span class="h1-span"><i>Man</i></span></h1>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#about" style="--read: true" class="about">About</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content" id="reg">
+
+            <div class="profile">
+                <input type="file" id="fileimage">
+            </div>
+
+            <div class="sortbio">
+                <input type="text" id="firstname" placeholder="Depan">
+                <input type="text" id="lasttname" placeholder="Belakang (Opsional)">
+            </div>
+            <div class="born">
+                <input type="date" id="borninput">
+                <pre>0 <span>Tahun</span></pre>
+            </div>
+            
+            <div class="account">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+
+            <div class="gender">
+                <i>Male</i> <input type="checkbox" id="male">
+                <i>Female</i> <input type="checkbox" id="female">
+                <i>Unknown</i> <input type="checkbox" id="unknown">
+            </div>
+
+            <button type="submit" id="regbutton">Daftar</button>
+        </section>
+    </main>
+
+    <footer class="index">fishman&copy;2025 | Version 0.1 LTS</footer>
+</body>
+</html>
